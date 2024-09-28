@@ -141,7 +141,7 @@ function getPolls(){
 
             //Background color settings
             if(option1pct > option2pct){
-                addedPoll.style.backgroundColor="#808cff";
+                addedPoll.style.backgroundColor="#a1b4ff";
             }
             if(option2pct > option1pct){
                 addedPoll.style.backgroundColor="#ffa6a6";
