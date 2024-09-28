@@ -100,7 +100,7 @@ function getPolls(){
             option1pct+="%";
             option2pct+="%";
 
-            //Underline the winning candidate
+            //Underline the winning candidate and append the difference between their number
             if(option1pct > option2pct){
                 option1label="<u>"+option1label+"</u>";
                 option1pct+=(" (+"+diff1+")");
@@ -139,8 +139,9 @@ function getPolls(){
             pollsListDiv=document.getElementById("pollsList");
             pollsListDiv.append(addedPoll);
 
+            //Background color settings
             if(option1pct > option2pct){
-                addedPoll.style.backgroundColor="#9da0fc";
+                addedPoll.style.backgroundColor="#808cff";
             }
             if(option2pct > option1pct){
                 addedPoll.style.backgroundColor="#ffa6a6";
